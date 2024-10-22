@@ -1,0 +1,10 @@
+# cargo 2024, 권장하지 않음
+# cargo-features = ["edition2024"]
+
+
+[package]
+name = "Rust-000-Hello-01"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
