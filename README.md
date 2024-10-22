@@ -13,3 +13,11 @@ rustup --version
 ruestc --version
 cargo --version
 ```
+
+## cargo 를 이용한 프로젝트 생성
+
+프로젝트 이름은 snack-case and kebab-case 로 작성한다
+
+```bash
+cargo new [project]
+```
