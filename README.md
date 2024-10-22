@@ -16,8 +16,20 @@ cargo --version
 
 ## cargo 를 이용한 프로젝트 생성
 
-프로젝트 이름은 snack-case and kebab-case 로 작성한다
+프로젝트 이름은 snack-case or kebab-case 로 작성한다
 
 ```bash
 cargo new [project]
+```
+
+프로젝트 **build** 는 다음명령으로
+
+```bash
+cargo build
+```
+
+**build** 된 프로젝트 실행
+
+```bash
+cargo run
 ```
