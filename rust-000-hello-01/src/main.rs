@@ -35,10 +35,20 @@ fn main() {
     let num: i32 = 5;
     println!("The value of num is: {}", num);
 
-    // 문자열형 포인ㅌ 변수 선언하기
+    // 문자열형 포인트 변수 선언하기
     let str: &str = "Hello, world!";
     println!("문자열 포인터 &str {}", str);
 
+    // 문자열형 변수 선언하기
     let str: String = String::from("Hello, world!");
     println!("문자열 변수 {str}");
+
+    // 일반 문자열을 변수에 할당하면 문자열형 포인트 변수가 되고,
+    // to_string() 함수를 통하여 변환하면 문자열 변수가 된다
+    let str = "우리나라 만세";
+    println!("문자열 포인터 &str {}", str);
+
+    let str = "Republic of Korea".to_string();
+    println!("문자열 변수 {str}");
+    
 }
