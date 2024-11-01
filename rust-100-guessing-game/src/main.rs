@@ -71,9 +71,11 @@ fn main() {
 
     // 변수선언하기
     let foo = 5; // immutable
-    let bar = 5; // mutable
+    let mut bar = 5; // mutable
+    bar = 100;
 
     println!("foo: {}, bar: {}", foo,bar);
+    println!("foo: {foo}, bar: {bar}");
 
 
 }
