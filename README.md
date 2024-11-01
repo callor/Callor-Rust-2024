@@ -22,6 +22,13 @@ cargo --version
 cargo new [project]
 ```
 
+cargo를 사용하여 bin 프로젝트 생성하기
+`--bin` 옵션을 생략하면 라이브러리용 프로젝트를 생성한다
+
+```bash
+cargo new [project] --bin
+```
+
 프로젝트 **build** 는 다음명령으로
 
 ```bash
