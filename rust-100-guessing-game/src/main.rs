@@ -71,8 +71,21 @@ fn main() {
 
     // 변수선언하기
     let foo = 5; // immutable
-    let mut bar = 5; // mutable
+    let mut bar = 0; // mutable
+
+    // 변수에 값을 할당했으면 반드시 한번은 사용(read)해야 한다
+    // 의미 없는 값의 할당을 방지하기 위한 rust 정책
+
+    // 아래 출력문이 없으면 경고가 난다
+    println!("foo: {}, bar: {}", foo,bar);
+
+
     bar = 100;
+
+    // 아래 출력문이 없으면 경고가 난다
+    println!("foo: {}, bar: {}", foo,bar);
+
+    bar = 200;
 
     println!("foo: {}, bar: {}", foo,bar);
     println!("foo: {foo}, bar: {bar}");
