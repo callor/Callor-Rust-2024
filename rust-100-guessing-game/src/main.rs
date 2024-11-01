@@ -1,8 +1,16 @@
+// rand crate 를 사용하기 위해 extern crate rand; 를 사용한다.
+extern crate rand;
+
 // io library is used to take input from the user
 use std::io;
+use rand::Rng;
 
 fn main() {
     println!("Guess the number!");
+
+    // secret_number 변수를 생성하고, 1부터 100까지의 난수를 생성하여 저장한다.
+    let secret_number = rand::thread_rng().gen_range(1, 101);
+    println!("The secret number is: {}", secret_number);
 
     println!("Please input your guess.");
 
@@ -42,7 +50,7 @@ fn main() {
 
     // 변수선언하기
     let foo = 5; // immutable
-    let mut bar = 5; // mutable
+    let bar = 5; // mutable
 
     println!("foo: {}, bar: {}", foo,bar);
 
