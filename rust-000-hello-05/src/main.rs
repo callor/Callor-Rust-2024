@@ -10,6 +10,6 @@ fn main() {
     println!("The value of one is: {}", one);
     println!("The value of x is: {}",x.1);
 
-    let tup:() = ();
+    let tup  = (1,2,3,4,5);
     println!("The value of tup is: {:?}", tup);
 }
